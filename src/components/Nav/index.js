@@ -1,4 +1,4 @@
-import React from 'react';
+//use "npm start" to initiate in terminal
 import { capitalizeFirstLetter } from '../../utils/helpers';
 import React, { useEffect } from 'react';
 
@@ -8,6 +8,7 @@ function Nav(props) {
     setCurrentCategory,
     currentCategory,
   } = props;
+  
   useEffect(() => {
     document.title = capitalizeFirstLetter(currentCategory.name);
   }, [currentCategory]);
