@@ -1,6 +1,11 @@
 import React from "react";
 import { capitalizeFirstLetter } from "../../utils/helpers";
 
+const categories = [
+  { name: 'portraits', description: 'Portraits of people in my life' }
+]
+
+
 function Nav(props) {
   const {
     categories = [],
